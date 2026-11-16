@@ -58,20 +58,99 @@ section h3 {
 }
 
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  margin-bottom: 18px;
+  padding: 18px;
+  border: 1px solid #e0e5f2;
+  border-left: 4px solid #3949ab;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #fff 0%, #f7f8ff 100%);
+  box-shadow: 0 3px 10px rgba(26, 35, 126, 0.07);
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 1.15rem;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.activity-detail {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.participants-section {
+  margin-top: 16px;
+  padding: 13px 15px;
+  border-radius: 8px;
+  background-color: #eef1ff;
+}
+
+.participants-section h5 {
+  margin-bottom: 9px;
+  color: #283593;
+  font-size: 0.95rem;
+}
+
+.participants-list {
+  display: grid;
+  gap: 7px;
+  padding: 0;
+  list-style: none;
+  color: #374151;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 0;
+}
+
+.participant-email {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.remove-participant-button {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  border: 1px solid #f1c5c2;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #b42318;
+}
+
+.remove-participant-button:hover {
+  background-color: #fff0ef;
+}
+
+.remove-participant-button:focus-visible {
+  outline: 3px solid #9fa8da;
+  outline-offset: 2px;
+}
+
+.remove-participant-button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.remove-participant-button svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
 }
 
 .form-group {
